@@ -63,16 +63,16 @@ app.post('/BMI', (req,res)=>{
 
     switch (true) {
         case adjusted_bmi < 18.5:
-            bmiResult.category = 'Underweight';
+            bmiResult.category = 'You are underweight for your height and age';
             break;
         case adjusted_bmi >= 18.5 && bmi < 25:
-            bmiResult.category = 'Normal weight';
+            bmiResult.category = 'You are at a normal weight for your height and age';
             break;
         case adjusted_bmi >= 25 && bmi < 30:
-            bmiResult.category = 'Overweight';
+            bmiResult.category = 'You are overweight for your height and age';
             break;
         default:
-            bmiResult.category = 'Obesity';
+            bmiResult.category = 'You are obese';
     }
 
     res.json(bmiResult);
