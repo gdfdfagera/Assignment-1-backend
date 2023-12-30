@@ -1,0 +1,43 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+}
+
+.small-select {
+    font-size: 15px;
+    height: calc(1.5em + 0.75rem + 2px);
+    width: 80px;
+    padding: 7px;
+    border-color: rgb(196, 196, 196);
+    background-color: rgb(198, 224, 241);
+}
+
+.underweight{
+    color: rgb(222, 117, 12) ;
+}
+
+.normal{
+    color: green;
+}
+
+.overweight{
+    color: rgb(163, 2, 2);
+}
+
+footer {
+    width: 100%;
+}
+
+#Gender{
+    display: grid; 
+    grid-template-areas: 
+    "A A A A   A A A A   A A A A"
+    "B B B B   B B C C   C C C C";
+    text-align: center;
+}
